@@ -1,0 +1,64 @@
+====================================================================================
+Author       : jaguarthemes
+Template Name: Meet Soon - Responsive Coming Soon Template
+Version      : 1.0
+Author URL   : http://www.jaguarthemes.com
+Created by   : Jaguar Themes
+Description  : Meet Soon is a fully responsive Coming Soon Template With Mail chimp Integration. It differents layouts- With counter, with Progressbar, include icon sets, 6 different color variation and newsletter registration (mailchimp).
+License      : This project is licensed under the terms of the MIT license 
+====================================================================================
+
+About us, Services, Map, Fully working PHP contact form is available in the pro version from https://www.codegrape.com/item/meet-soon-responsive-coming-soon-template/13639
+
+If you like my theme then you can buy Pro Version from https://www.codegrape.com/item/meet-soon-responsive-coming-soon-template/13639
+
+Thank You. Here is guide for using this theme.
+
+Step For using this Template:
+
+1.	Extract meetsoon zip File. 
+2.	Open your chosen HTML File in any editor.
+
+Steps for editing theme:
+
+1.Image Background 
+	CSS needed for image background:
+		bootstrap.min.css
+		font-awesome.min.css
+		css/style.css
+		css/color/light_red.css
+		====>>>You can change color CSS according to your Chosen Color you can you green.css or orange.css instead of light_red.css. light_red.css is default. for changing color replace css/color/light_red.css with your chooosen color like if i choose orange then replace with css/color/orange.css
+
+	JS needed for image background.
+		jquery.min.js
+		bootstrap.min.js
+		preloader.js
+		jquery.countdown.min.js
+
+================================================================================================
+
+**How to Edit counter:
+
+	Find below JS into HTML page
+	.countdown("2017/12/31", function(event) {
+	2017/12/31-  YYYY/MM/DD Means 31 dec 2017
+
+=================================================================================================
+
+**How to Edit ProgressBar
+
+<div class="progressbar_outer">
+	<div class="progress">
+		<div class="progress-bar progress-bar-info progress-bar-striped active" style="width:80%;"></div>
+		<div class="progressbar_value">80%</div>
+	</div>
+</div>
+
+	By default I use 80% Complete. 
+	style="width:80%;" You can change it as per your requirement.
+
+	For Value display change using following Code.
+	<div class="progressbar_value">80%</div>
+
+Thank You.
+For any Support contact us using Email. Email id is support@jaguarthemes.com

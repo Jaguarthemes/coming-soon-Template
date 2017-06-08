@@ -1,0 +1,489 @@
+/*
+====================================================================================
+Author       : Jaguar Themes
+Template Name: Meet Soon - Responsive Coming Soon Template
+Version      : 1.0
+Author URL   : https://www.jaguarthemes.com
+Created by   : Jaguar Themes
+Description  : Meet Soon is a fully responsive Coming Soon Template With 10 Different variation with Mail chimp Integration. It offers 5 background style with differents layouts- With counter, with Progressbar, With Modal popup and also include icon sets, 6 different color variation, newsletter registration (mailchimp) and a working PHP contact form.
+Tags	     : Coming soon, coundown, progressbar, Under construction, mailchimp, agency, bootstrap, business, clean, contact form, creative, Modern, multipurpose, responsive, youtube 
+License      : GNU General Public License v3 or later 
+License URI  : http://www.gnu.org/licenses/gpl.html
+====================================================================================
+
+This css is default You have to add this css in all the index page that you want. Rest one css is included depends on your requirement.	
+	1. Preloader
+	2. Background
+	3. Coming Text
+	4. Counter
+	5. Social Icon
+	6. Subscribe 
+	7. Contact Info
+	8. Copy Right
+	9. Progress Bar
+**** Media Queries css ***
+*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland');
+*
+{
+	text-decoration:none !important;
+	list-style:none !important;
+	font-family: 'Bree Serif', serif;
+}
+/*>>>>>>>>>>>> 1. Preloader <<<<<<<<<<<<<<<<< */
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+.loadscreen {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+.loader {
+  color: #000;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*>>>>>>>>>>>> /1. Preloader <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 2. Background <<<<<<<<<<<<<<<<< */
+#main_bg
+{
+	background-image: url("../images/sunrise.jpg");
+	position: relative;
+	background-size: cover;
+	height:100%;
+	width:100%;
+}
+.overlay_bg
+{
+	background:rgba(0, 0, 0, 0.7);
+	padding-top:60px;
+	height:100%;
+	width:100%;
+	padding-bottom:34px;
+}
+.overlay_bg1
+{
+	background:rgba(0, 0, 0, 0.7);
+	padding-top:60px;
+	height:100vh;
+	width:100%;
+	padding-bottom:34px;
+}
+/* particle */
+#particles1
+{
+	position: fixed;
+	top: 0;
+	height: 100%;
+	min-height: 700px;
+	width: 100%;
+}
+#particle
+{
+	background-color:#000;
+}
+/* Particle Second */
+#particles_bg
+{
+	position: fixed;
+	top: 0;
+	height: 100%;
+	min-height: 700px;
+	width: 100%;
+	z-index:-100;
+}
+/*>>>>>>>>>>>> /2. Background <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 3. Coming Text <<<<<<<<<<<<<<<<< */
+.coming_text h1
+{
+	font-size:80px;
+	color:#FFFFFF;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-family: 'Mr De Haviland', cursive !important;
+	word-spacing:20px;
+}
+.coming_text p
+{
+	width:50%;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-size:18px;
+}
+/*>>>>>>>>>>>> /3. Coming Text <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 4. Counter <<<<<<<<<<<<<<<<< */
+.counter {
+	margin-top: 20px;
+}
+.counter .day_holder, .counter .hour_holder, .counter .minute_holder, .counter .second_holder {
+	display: inline-block;
+	width: 140px;
+	padding-top: 3px;
+	font-size: 18px;
+	color: #FFF;
+	height: 140px;
+	margin: 20px 10px;
+	text-align: center;
+	border-radius: 15%;
+}
+.counter .day, .counter .hour, .counter .minute, .counter .second {
+	font-size: 60px;
+	color:#FFFFFF;
+}
+/*>>>>>>>>>>>> /4. Counter <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 5. Social Icon <<<<<<<<<<<<<<<<< */
+.social_icon
+{
+	margin-top:20px;
+	margin-bottom:30px;
+	padding-left:0px;
+}
+.social_icon li a
+{
+	color:#FFFFFF;
+	margin-right:14px;
+	font-size:16px;
+	display: inline-block;
+	overflow: hidden;
+}
+.social_icon li a i 
+{
+	transition: transform 0.25s ease, opacity 0.2s linear;
+	-webkit-transition: -webkit-transform 0.25s ease , opacity 0.2s linear;
+	position:relative;
+	line-height:24px;
+}
+.social_icon li a:hover i 
+{
+	-webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.social_icon li a i:after 
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);	
+	color:#FF0000;
+	font-size:16px;
+	line-height:24px;
+}
+.social_icon li .fa-facebook:after {
+    content:"\f09a";
+}
+.social_icon li .fa-google-plus:after {
+    content:"\f0d5";
+}
+.social_icon li .fa-twitter:after {
+    content:"\f099";
+}
+.social_icon li .fa-pinterest:after {
+    content:"\f0d2";
+}
+.social_icon li .fa-instagram:after {
+    content:"\f16d";
+}
+.social_icon li .fa-linkedin:after {
+    content:"\f0e1";
+}
+.social_icon li .fa-dribbble:after {
+    content:"\f17d";
+}
+.social_icon li a i:before {
+	width: 100%;
+}
+.social_icon2
+{
+	margin-top:20px !important;
+}
+.social_icon li a img
+{
+	display:inline-block;
+}
+
+/*>>>>>>>>>>>> /5. Social Icon <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 6. Subscribe <<<<<<<<<<<<<<<<< */
+.subscribe-body p
+{
+	color:#FFFFFF;
+	text-transform:uppercase;
+	font-size:16px;
+	margin-top:20px;
+}
+.subscribe-body form
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.subscribe-body .btn-default
+{
+	color:#fff;
+	position:relative;
+}
+.subscribe-body .input-group-btn
+{
+	z-index:99;
+}
+.subscribe-body .input-group-btn:before
+{
+	content: "";
+	position: absolute;
+	border-width: 8px 8px 8px 0px;
+	border-style: solid solid solid none;
+	margin-top: 13px;
+	margin-left: -9px;
+}
+.top_margin
+{
+	margin-top:20px;
+}
+.subscribe-body .sub_text
+{
+	background: rgba(169, 169, 169, 0.3) !important;
+	color:#fff;
+	border: 1px solid #6E6E6E;
+}
+/*>>>>>>>>>>>> /6. Subscribe <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 7. Contact Info <<<<<<<<<<<<<<<<< */
+
+.contact_info p
+{ 
+	font-size:14px;
+	margin-bottom:0px;
+	cursor:pointer;
+	font-weight:600;
+	color:#fff;
+	margin-right:10px;
+	float:left;
+}
+.contact_info p i
+{
+	margin-right:10px;
+}
+
+/*>>>>>>>>>>>> /7. Contact Info <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 8. Copy Right <<<<<<<<<<<<<<<<< */
+.footer .copy_right p
+{
+	text-align:right;
+}
+.copy_right
+{
+	color:#fff;
+}
+.copy_right a
+{
+	color:#fff;
+}
+
+/*>>>>>>>>>>>> /8. Copy Right <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 9. Progress Bar <<<<<<<<<<<<<<<<< */
+.title_progress
+{
+	color:#fff;
+	margin-bottom:30px;
+}
+.progressbar_outer{
+    border-radius: 50px;
+    padding: 25px;
+    margin: 10px 0;
+    box-shadow: 0 0  10px rgba(209, 219, 231,0.7);
+}
+.progress{
+    height: 27px;
+    margin: 0;
+    overflow: visible;
+    border-radius: 50px;
+    background: rgba(169, 169, 169, 0.3) !important;
+}
+.progress .progress-bar{
+    border-radius: 50px;
+	 box-shadow:-1px 10px 10px rgba(91, 192, 222, 0.7);
+}
+.progress .progressbar_value{
+    position: relative;
+    left: -45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.progress-bar.active{
+    animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 5s;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive {
+    0% { width: 0%; }
+}
+/*>>>>>>>>>>>> /9. Progress Bar <<<<<<<<<<<<<<<<< */
+
+/***** Media Queries css *****/
+@media only screen and (min-width: 1024px) {
+  .more_info {
+    top: 60px;
+  }
+}
+@media only screen and (min-width: 980px) {
+.more_info {
+    top:55px;
+  }
+}
+@media only screen and (min-width: 800px) {
+.more_info {
+    top:50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+.more_info {
+    top:50px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .more_info_container {
+    width: 70%;
+  }
+  .more_info_container header {
+    height: 116px;
+    padding-top: 3em;
+  }
+  .close_more_info {
+    right: 7.14%;
+  }
+}
+@media (max-width: 480px) {
+#main_bg
+{
+	height:100%;
+}
+.overlay_bg
+{
+	height:100%;
+}
+.overlay
+{
+	padding:15px;
+}
+.button
+{
+	margin-right:0px;
+}
+.social_icon li a img
+{
+	margin-bottom:15px;
+}
+.services_cube_effect
+{
+	margin-bottom:30px;
+}
+.more_info_container
+{
+	width:100%;
+}
+.more_info_container h3
+{
+	margin-top:35px;
+}
+}
+

@@ -1,0 +1,50 @@
+
+/*>>>>>>>>>>>> 4. Counter <<<<<<<<<<<<<<<<< */
+.counter .day_holder, .counter .hour_holder, .counter .minute_holder, .counter .second_holder {
+	border: 3px solid #F44234;
+	
+}
+/*>>>>>>>>>>>> /4. Counter <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 5. Social Icon <<<<<<<<<<<<<<<<< */
+.social_icon li a i:after 
+{	
+	color:#F44234;
+}
+/*>>>>>>>>>>>> /5. Social Icon <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 6. Subscribe <<<<<<<<<<<<<<<<< */
+.subscribe-body .btn-default
+{
+	background-color:#F44234 !important;
+	border-color:#F44234 !important;
+}
+.subscribe-body .input-group-btn:before
+{
+	border-color: transparent #F44234;
+}
+/*>>>>>>>>>>>> /6. Subscribe <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 7. Contact Info <<<<<<<<<<<<<<<<< */
+.contact_info p:hover
+{
+	color:#F44234;
+}
+/*>>>>>>>>>>>> /7. Contact Info <<<<<<<<<<<<<<<<< */
+
+/*>>>>>>>>>>>> 8. Copy Right <<<<<<<<<<<<<<<<< */
+.copy_right a:hover 
+{
+	color:#F44234;
+}
+/*>>>>>>>>>>>> /8. Copy Right <<<<<<<<<<<<<<<<< */
+/*>>>>>>>>>>>> 9. Progress Bar <<<<<<<<<<<<<<<<< */
+.progress-bar
+{
+	background-color:#F44234;
+}
+.progress .progress-bar{
+    border-radius: 50px;
+	 box-shadow:-1px 10px 10px rgba(94, 52, 94, 0.7);
+}
+/*>>>>>>>>>>>> /9. Progress Bar <<<<<<<<<<<<<<<<< */
